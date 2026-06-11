@@ -1456,7 +1456,7 @@ async function runAnalysis() {
         'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-5',
         max_tokens: 3000,
         system: '你是3D AI市場KOL內容分析專家，知識庫版本v1.0（2026.06）。分析時請充分引用知識庫中的具體爆款公式（F1–F6、F-JP1）、語區痛點/爽點數據、通用規律（R1–R7）和行業趨勢，讓分析結論有具體依據而非泛泛而談。請嚴格按JSON格式輸出，不要包含任何markdown標記或額外說明文字。',
         messages: [{ role: 'user', content: prompt }]
